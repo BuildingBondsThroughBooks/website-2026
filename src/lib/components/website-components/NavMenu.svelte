@@ -3,7 +3,8 @@
   import * as Drawer from "$lib/components/ui/drawer/index.js";
   import {resolve} from '$app/paths';
   // Common styling for consistency between links and triggers
-  const navItemStyle = "text-lg bg-(none) p-2 mx-2";
+  const navItemStyle = "text-lg bg-(none) mx-2";
+  const desktopNavItemStyle = "text-lg bg-(none) h-10 mx-2";
   const menuItemStyle = "text-(--bbtb-foreground)"
   const menuStyle = "flex flex-col justify-center top-10 bg-(--bbtb-background) p-4 shadow-lg rounded-md z-10";
   const mobileMenuStyle = "bg-(--bbtb-background) p-4 shadow-lg rounded-md";
@@ -11,18 +12,18 @@
 
 <NavigationMenu.Root>
   <!-- Desktop Horizontal View -->
-  <NavigationMenu.List class=" w-full hidden lg:flex justify-center bg-(--bbtb-foreground) text-(--bbtb-background)">
+  <NavigationMenu.List class="w-full hidden lg:flex h-14 justify-center bg-(--bbtb-foreground) text-(--bbtb-background)">
     
     <!-- Home (Direct Link) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Link href={resolve("/")} class={navItemStyle}>
+      <NavigationMenu.Link href={resolve("/")} class={desktopNavItemStyle}>
         Home
       </NavigationMenu.Link>
     </NavigationMenu.Item>
 
     <!-- About (Trigger) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger class={navItemStyle}>
+      <NavigationMenu.Trigger class={desktopNavItemStyle}>
         About
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
@@ -33,7 +34,7 @@
 
     <!-- Books (Trigger) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger class={navItemStyle}>
+      <NavigationMenu.Trigger class={desktopNavItemStyle}>
         Request Books
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
@@ -45,7 +46,7 @@
 
     <!-- Resources (Trigger) -->
     <NavigationMenu.Item >
-      <NavigationMenu.Trigger class={navItemStyle}>
+      <NavigationMenu.Trigger class={desktopNavItemStyle}>
         Resources
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
@@ -57,7 +58,7 @@
 
     <!-- Contact Us (Direct Link) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Link href={resolve("/contact")} class={navItemStyle}>
+      <NavigationMenu.Link href={resolve("/contact")} class={desktopNavItemStyle}>
         Contact Us
       </NavigationMenu.Link>
     </NavigationMenu.Item>
@@ -65,7 +66,7 @@
     
 <!-- Donate (Trigger) -->
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger class={navItemStyle}>
+      <NavigationMenu.Trigger class={desktopNavItemStyle}>
         Donate
       </NavigationMenu.Trigger>
       <NavigationMenu.Content class={menuStyle}>
