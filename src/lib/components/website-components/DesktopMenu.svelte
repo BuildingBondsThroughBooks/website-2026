@@ -4,7 +4,7 @@
     // Common styling for consistency between links and triggers
     const desktopNavItemStyle = "text-lg bg-(none) h-10 mx-2";
     const menuItemStyle = "text-(--bbtb-foreground)"
-    const menuStyle = "flex flex-col justify-center top-10 bg-(--bbtb-background) p-4 shadow-lg rounded-md z-10";
+    const menuStyle = "flex flex-col justify-center top-11 left-2 bg-(--bbtb-background) p-4 shadow-lg rounded-md z-10";
 
 </script>
 
