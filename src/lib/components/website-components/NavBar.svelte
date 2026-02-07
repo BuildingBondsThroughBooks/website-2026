@@ -1,4 +1,5 @@
 <script lang="ts">
+    import MenuRenderer from "./MenuRenderer.svelte";
     import NavMenu from "./NavMenu.svelte";
     import websiteLogo from '$lib/assets/images/websiteLogo.svg';
 </script>
@@ -9,5 +10,5 @@
         <h1 class="text-center text-2xl lg:text-6xl text-(--bbtb-foreground)">Building Bonds Through Books</h1>
         <sub class="text-center mt-2 text-md lg:text-lg italic p-1 text-(--bbtb-foreground)">Bonding Beyond Sentencing: Uniting Families Through Books</sub>
     </span>
-    <NavMenu />
+    <MenuRenderer />
 </div>
