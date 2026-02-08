@@ -1,1 +1,0 @@
-import{c as t,l as o}from"../chunks/B8tfW1uI.js";import"../chunks/9njMoiMh.js";import{p as s,b as p,F as n}from"../chunks/Cm-v4IFc.js";a[n]="src/routes/resources/national-parents/+page.svelte";function a(c,e){t(new.target),s(e,!1,a);var r={...o()};return p(r)}export{a as component};
